@@ -1,5 +1,4 @@
 const mix = require('laravel-mix');
-const { routerKey } = require('vue-router');
 
 /*
  |--------------------------------------------------------------------------
@@ -12,8 +11,7 @@ const { routerKey } = require('vue-router');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js', 'resources/js/routes.js')
-    .vue()
+mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
     ]);
